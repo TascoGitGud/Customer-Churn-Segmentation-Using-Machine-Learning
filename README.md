@@ -59,8 +59,6 @@ An e-commerce company wants to reduce the number of customers who stop using the
 
 ### 📊 Data Structure
 
-#### 🗃️ Tables Used
-
 <details>
 <summary>One main table containing customer behavior and account information - Click to view full table schema</summary>
 | Column Name | Data Type | Description |
