@@ -478,7 +478,7 @@ for set_name, cols in feature_sets.items():
 
 Columns used: `Tenure`, `Cashback`, `SatisfactionScore`, `Complain`, `OrderCount`, `DaySinceLastOrder`, `HourSpendOnApp`.
  
-Result: Best set overall, with a clear peak at K=6 and an acceptable result at K=3.
+**Result**: Best set overall, with a clear peak at **K=6** and an acceptable result at **K=3**.
  
 **Set2_Logistics_Service**
  
@@ -488,7 +488,7 @@ Result: Best set overall, with a clear peak at K=6 and an acceptable result at K
 
 Columns used: `WarehouseToHome`, `Complain`, `SatisfactionScore`, `CouponUsed`, `DaySinceLastOrder`.
  
-Result: OK, but weaker separation than Set1.
+**Result**: OK, but weaker separation than **Set1**.
  
 **Set3_All_Numeric_Baseline**
  
@@ -498,7 +498,7 @@ Result: OK, but weaker separation than Set1.
 
 Columns used: all numeric columns combined.
  
-Result: Silhouette score too low (0.07-0.11), no usable clustering structure.
+**Result**: Silhouette score too low (**0.07-0.11**), no usable clustering structure.
  
 **Set4_Behavioral_NoSatisfaction**
  
@@ -506,11 +506,11 @@ Result: Silhouette score too low (0.07-0.11), no usable clustering structure.
   <img src="Churn_Prediction/set4.png" width="80%">
 </p>
 
-Columns used: same as Set1 but without `SatisfactionScore`.
+Columns used: same as **Set1** but without `SatisfactionScore`.
  
-Result: Score keeps rising with K, no clear peak to pick a K from.
+**Result**: Score keeps rising with K, no clear peak to pick a K from.
  
-Final choice: **Set1 with K = 3**. K=3 was chosen over K=6 because it gives 3 distinct, meaningful groups that are practical for the marketing team to act on.
+**Final choice**: **Set1 with K = 3**. **K=3** was chosen over **K=6** because it gives 3 distinct, meaningful groups that are practical for the marketing team to act on.
 
 #### Step 2: Run Final Clustering & Label Each Group
 
@@ -528,7 +528,7 @@ print('Columns used:', results[CHOSEN_SET]['columns'])
 print(churn_df['Cluster'].value_counts().sort_index())
 ```
 
-KMeans was run with K=3 on Set1 features (after `StandardScaler` normalization). Each churned customer was assigned to one of three clusters.
+KMeans was run with **K=3** on **Set1** features (after `StandardScaler` normalization). Each churned customer was assigned to one of three clusters.
 
 #### Step 3: Cluster Profiling - Who is in Each Group?
 
