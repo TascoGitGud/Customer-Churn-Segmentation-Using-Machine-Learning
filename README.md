@@ -475,6 +475,7 @@ for set_name, cols in feature_sets.items():
 <p align="center">
   <img src="Churn_Prediction/set1.png" width="80%">
 </p>
+
 Columns used: `Tenure`, `Cashback`, `SatisfactionScore`, `Complain`, `OrderCount`, `DaySinceLastOrder`, `HourSpendOnApp`.
  
 Result: Best set overall, with a clear peak at K=6 and an acceptable result at K=3.
@@ -484,6 +485,7 @@ Result: Best set overall, with a clear peak at K=6 and an acceptable result at K
 <p align="center">
   <img src="Churn_Prediction/set2.png" width="80%">
 </p>
+
 Columns used: `WarehouseToHome`, `Complain`, `SatisfactionScore`, `CouponUsed`, `DaySinceLastOrder`.
  
 Result: OK, but weaker separation than Set1.
@@ -493,6 +495,7 @@ Result: OK, but weaker separation than Set1.
 <p align="center">
   <img src="Churn_Prediction/set3.png" width="80%">
 </p>
+
 Columns used: all numeric columns combined.
  
 Result: Silhouette score too low (0.07-0.11), no usable clustering structure.
@@ -502,6 +505,7 @@ Result: Silhouette score too low (0.07-0.11), no usable clustering structure.
 <p align="center">
   <img src="Churn_Prediction/set4.png" width="80%">
 </p>
+
 Columns used: same as Set1 but without `SatisfactionScore`.
  
 Result: Score keeps rising with K, no clear peak to pick a K from.
