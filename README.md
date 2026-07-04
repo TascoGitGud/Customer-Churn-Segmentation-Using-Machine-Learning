@@ -544,18 +544,23 @@ Highest `Tenure` (longest time with the company), but lowest `CashbackAmount` an
 🔴 **Cluster 0 - "Long-term, high-value customers with complaints"**
 
 ✔️ Reach out personally to resolve their complaints; these are high-value customers and losing them hurts the most.
+
 ✔️ Offer free shipping or faster delivery to reduce the impact of long warehouse distances.
+
 ✔️ Send a special cashback voucher as a "thank you for staying with us" to bring them back.
 
 🟡 **Cluster 1 - "Happy but quietly drifting away"**
 
 ✔️ Don't apologize; there's nothing wrong with their experience. Instead, re-engage them with time-limited flash sales or new product alerts.
+
 ✔️ Send a short survey to understand why they stopped buying; it may be a change in needs, not dissatisfaction.
 
 🟢 **Cluster 2 - "Loyal but under-rewarded"**
 
 ✔️ Increase cashback rates or send discount vouchers for their next purchase; they are currently getting the least value back.
+
 ✔️ Create a loyalty program specifically for long-`Tenure` customers so they feel recognized for their commitment.
+
 ✔️ Send personalized product recommendations to encourage more orders, since their `OrderCount` is the lowest.
 
 ---
