@@ -59,13 +59,10 @@ An e-commerce company wants to reduce the number of customers who stop using the
 
 ### 📊 Data Structure
 
-#### 1️⃣ Tables Used
-One main table containing customer behavior and account information.
-
-#### 2️⃣ Table Schema
+#### 🗃️ Tables Used
 
 <details>
-<summary>Click to view full table schema</summary>
+<summary>One main table containing customer behavior and account information - Click to view full table schema</summary>
 | Column Name | Data Type | Description |
 |---|---|---|
 | `CustomerID` | INT | Unique ID for each customer |
@@ -85,7 +82,6 @@ One main table containing customer behavior and account information.
 | `Complain` | INT | 1 = filed a complaint in the last month |
  
 </details>
-
 
 ---
 
