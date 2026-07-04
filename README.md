@@ -509,6 +509,12 @@ Columns used: all numeric columns combined.
 Columns used: same as **Set1** but without `SatisfactionScore`.
  
 **Result**: Score keeps rising with K, no clear peak to pick a K from.
+
+**Choosing K (tuning K) on Set1**
+ 
+- **K=2** (Silhouette 0.2010): high score, but only splits customers into 2 broad groups, not detailed enough for the company to design separate promotion programs.
+- **K=6** (Silhouette 0.2042, the highest): too many groups, harder to analyze and harder to turn into concrete actions per group.
+- **K=3** (Silhouette 0.1867): a good balance, decent silhouette score while splitting customers into 3 clearly distinct groups that are easy to analyze and act on.
  
 **Final choice**: **Set1 with K = 3**. **K=3** was chosen over **K=6** because it gives 3 distinct, meaningful groups that are practical for the marketing team to act on.
 
