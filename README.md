@@ -470,14 +470,43 @@ for set_name, cols in feature_sets.items():
     print()
 ```
 
-| Feature Set | Description | Result |
-|---|---|---|
-| Set1 - Behavioral & Value | `Tenure`, `Cashback`, `SatisfactionScore`, `Complain`, `OrderCount`, `DaySinceLastOrder`, `HourSpendOnApp` | Best: clear peak at K=6, acceptable at K=3 |
-| Set2 - Logistics & Service | `WarehouseToHome`, `Complain`, `SatisfactionScore`, `CouponUsed`, `DaySinceLastOrder` | OK but weaker than Set1 |
-| Set3 - All Numeric | All numeric columns combined | Silhouette too low (0.07-0.11) |
-| Set4 - Behavioral (no Satisfaction) | Same as Set1 but without `SatisfactionScore` | Score keeps rising with K, no clear peak |
-
-Final choice: Set1 with K = 3. K=3 was chosen over K=6 because it gives 3 distinct, meaningful groups that are practical for the marketing team to act on.
+**Set1 - Behavioral & Value**
+ 
+<p align="center">
+  <img src="Churn_Prediction/set1.png" width="80%">
+</p>
+Columns used: `Tenure`, `Cashback`, `SatisfactionScore`, `Complain`, `OrderCount`, `DaySinceLastOrder`, `HourSpendOnApp`.
+ 
+Result: Best set overall, with a clear peak at K=6 and an acceptable result at K=3.
+ 
+**Set2 - Logistics & Service**
+ 
+<p align="center">
+  <img src="Churn_Prediction/set2.png" width="80%">
+</p>
+Columns used: `WarehouseToHome`, `Complain`, `SatisfactionScore`, `CouponUsed`, `DaySinceLastOrder`.
+ 
+Result: OK, but weaker separation than Set1.
+ 
+**Set3 - All Numeric**
+ 
+<p align="center">
+  <img src="Churn_Prediction/set3.png" width="80%">
+</p>
+Columns used: all numeric columns combined.
+ 
+Result: Silhouette score too low (0.07-0.11), no usable clustering structure.
+ 
+**Set4 - Behavioral (no Satisfaction)**
+ 
+<p align="center">
+  <img src="Churn_Prediction/set4.png" width="80%">
+</p>
+Columns used: same as Set1 but without `SatisfactionScore`.
+ 
+Result: Score keeps rising with K, no clear peak to pick a K from.
+ 
+Final choice: **Set1 with K = 3**. K=3 was chosen over K=6 because it gives 3 distinct, meaningful groups that are practical for the marketing team to act on.
 
 #### Step 2: Run Final Clustering & Label Each Group
 
