@@ -24,8 +24,6 @@ Author: Bạch Minh Nam
 2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)
 3. [⚒️ Main Process](#️-main-process)
 4. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
-5. [🗂️ Project Structure](#️-project-structure)
-6. [🚀 How to Run This Project](#-how-to-run-this-project)
 
 ---
 
@@ -564,31 +562,3 @@ Highest `Tenure` (longest time with the company), but lowest `CashbackAmount` an
 ✔️ Send personalized product recommendations to encourage more orders, since their `OrderCount` is the lowest.
 
 ---
-
-## 🗂️ Project Structure
-
-```
-Churn_Prediction/
-    ├── Banner.png
-    ├── Customer_Churn_Prediction.ipynb     # Main notebook (EDA + ML + Clustering)
-    └── churn_prediction.xlsx               # Raw dataset
-```
-
----
-
-## 🚀 How to Run This Project
-
-**1. Clone the repository**
-```bash
-git clone https://github.com/TascoGitGud/Customer-Churn-Prediction-and-Segmentation-for-an-E-commerce-Company.git
-```
-
-**2. Install the required libraries**
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn openpyxl
-```
-
-**3. Open the notebook**
-```bash
-jupyter notebook Customer_Churn_Prediction.ipynb
-```
