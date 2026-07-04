@@ -470,7 +470,7 @@ for set_name, cols in feature_sets.items():
     print()
 ```
 
-**Set1 - Behavioral & Value**
+**Set1_Behavioral_Value**
  
 <p align="center">
   <img src="Churn_Prediction/set1.png" width="80%">
@@ -480,7 +480,7 @@ Columns used: `Tenure`, `Cashback`, `SatisfactionScore`, `Complain`, `OrderCount
  
 Result: Best set overall, with a clear peak at K=6 and an acceptable result at K=3.
  
-**Set2 - Logistics & Service**
+**Set2_Logistics_Service**
  
 <p align="center">
   <img src="Churn_Prediction/set2.png" width="80%">
@@ -490,7 +490,7 @@ Columns used: `WarehouseToHome`, `Complain`, `SatisfactionScore`, `CouponUsed`, 
  
 Result: OK, but weaker separation than Set1.
  
-**Set3 - All Numeric**
+**Set3_All_Numeric_Baseline**
  
 <p align="center">
   <img src="Churn_Prediction/set3.png" width="80%">
@@ -500,7 +500,7 @@ Columns used: all numeric columns combined.
  
 Result: Silhouette score too low (0.07-0.11), no usable clustering structure.
  
-**Set4 - Behavioral (no Satisfaction)**
+**Set4_Behavioral_NoSatisfaction**
  
 <p align="center">
   <img src="Churn_Prediction/set4.png" width="80%">
